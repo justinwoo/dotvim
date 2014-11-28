@@ -1,8 +1,12 @@
-# vimfiles
+# dotvim
 
-my vimfiles... not much here yet
+My vim files, boring as they are. Aiming to be the simplest dotvim on earth.
 
 
-# environment
+# Installation
 
-assumes installation of janus for now
+Clear out everything dear to you e.g. .vim, .vimrc
+
+Run make
+
+Open vim and run :PluginInstall

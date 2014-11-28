@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-ln -nsf `pwd`/dotfiles/vimrc.after ~/.vimrc.after
-ln -nsf `pwd`/dotfiles/gvimrc.after ~/.gvimrc.after
-ln -nsf `pwd`/janus ~/.janus
+ln -nsf `pwd`/dotfiles/vimrc ~/.vimrc
+ln -nsf `pwd`/dotfiles/gvimrc ~/.gvimrc
+ln -nsf `pwd`/dotfiles/vundlerc ~/.vundlerc
+ln -nsf `pwd`/vim ~/.vim
 
 echo 'symlinks made. check scripts/install.sh for details'

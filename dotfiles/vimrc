@@ -1,0 +1,39 @@
+""load up the vundles
+source ~/.vundlerc
+
+" backspace should be STRONG
+set backspace=2 
+
+""syntax on
+syn on
+
+""use the system clipboard
+""note to self: this is still totally broken in terminal
+set clipboard=unnamed
+
+""set my font size to be legible
+set guifont=Monaco:h16
+
+""muh colors
+"colors molokai
+
+""ignore crap with ctrlP to make it usable
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\.git$\|\.yardoc\|node_modules\|public\|bower_components\|dist\|build\|log\|tmp$',
+\ 'file': '\.so$\|\.dat$|\.DS_Store$'
+\ }
+
+"""my glorious mappings for extra laziness
+"make commands easier to input
+map ; :
+""map leader to ' since i dont use it either
+let mapleader = "'"
+"rebind ex mode to replay q macro
+map Q @q
+
+"leader key binds
+map <leader>n :NERDTreeToggle<cr>
+map <leader>t :TagBarToggle<cr>
+
+"reaching for esc is hard
+imap kj <Esc>
