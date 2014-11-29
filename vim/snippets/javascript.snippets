@@ -1,0 +1,25 @@
+snippet log
+	console.log('${1:MyCrap}');
+snippet lov
+	console.log('${1:MyCrap}', ${2:MyCrap});
+snippet newreact
+	var React = require('react');
+
+	var ${1:MyCrap} = React.createClass({
+	  render: function () {
+	    return (
+	    );
+	  }
+	});
+
+	module.exports = ${2:MyCrap};
+snippet rcc
+	React.createClass({
+	  render: function() {
+	    return (
+	      ${1: my crappy JSX}
+	    );
+	  }
+	});
+snippet mod
+	module.exports = ${1:MyCrap}
