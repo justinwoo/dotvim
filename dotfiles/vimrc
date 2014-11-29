@@ -1,8 +1,14 @@
 ""load up the vundles
 source ~/.vundlerc
 
-" backspace should be STRONG
+""backspace should be STRONG
 set backspace=2 
+
+""always show me the freaking status bar
+set laststatus=2
+
+""line numbers
+set number
 
 ""syntax on
 syn on
@@ -15,7 +21,7 @@ set clipboard=unnamed
 set guifont=Monaco:h16
 
 ""muh colors
-"colors molokai
+colors molokai
 
 ""ignore crap with ctrlP to make it usable
 let g:ctrlp_custom_ignore = {
@@ -30,10 +36,6 @@ map ; :
 let mapleader = "'"
 "rebind ex mode to replay q macro
 map Q @q
-
-"leader key binds
-map <leader>n :NERDTreeToggle<cr>
-map <leader>t :TagBarToggle<cr>
 
 "reaching for esc is hard
 imap kj <Esc>
