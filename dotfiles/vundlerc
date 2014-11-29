@@ -8,42 +8,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 ""my glorious plugins be declared here
-Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'vim-scripts/ZoomWin'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'mxw/vim-jsx'
-Plugin 'sjl/gundo.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/molokai'
-Plugin 'vim-scripts/emoji_complete'
-Plugin 'vim-scripts/css_color'
-
-Plugin 'scrooloose/nerdcommenter'
-if has("gui_macvim") && has("gui_running")
-  map <D-/> <plug>NERDCommenterToggle<CR>
-  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-else
-  map <leader>/ <plug>NERDCommenterToggle<CR>
-endif
-
-Plugin 'scrooloose/nerdtree'
-map <leader>n :NERDTreeToggle<cr>
-let NERDTreeQuitOnOpen=1
-
-Plugin 'majutsushi/tagbar'
-map <leader>t :TagbarToggle<cr>
-
-Plugin 'bling/vim-airline'
-let g:airline_powerline_fonts = 1
-set guifont=Meslo\ LG\ S\ for\ Powerline:h16
+source ~/.vundlerc.langs
+source ~/.vundlerc.colors
+source ~/.vundlerc.utils
 
 ""end of plugin declarations, time to wrap it up
 call vundle#end()            " required
