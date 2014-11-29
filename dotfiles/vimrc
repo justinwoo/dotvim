@@ -44,7 +44,8 @@ set nofoldenable
 set clipboard=unnamed
 
 ""set my font size to be legible
-set guifont=Monaco:h16
+""set guifont=Menlo:h16
+""font is set in airline configs instead. see vundlerc
 
 ""muh colors
 colors molokai

@@ -34,6 +34,10 @@ let NERDTreeQuitOnOpen=1
 Plugin 'majutsushi/tagbar'
 map <leader>t :TagbarToggle<cr>
 
+Plugin 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+set guifont=Meslo\ LG\ S\ for\ Powerline:h16
+
 ""end of plugin declarations, time to wrap it up
 call vundle#end()            " required
 filetype plugin indent on    " required
