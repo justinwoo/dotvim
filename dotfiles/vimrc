@@ -39,6 +39,10 @@ set laststatus=2
 "" no folding because it sucks
 set nofoldenable
 
+"" put swap outside of my workspace
+set swapfile
+set dir=~/.vim/swap
+
 ""use the system clipboard
 ""note to self: this is still totally broken in terminal
 set clipboard=unnamed
