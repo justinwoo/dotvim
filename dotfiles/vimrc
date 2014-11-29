@@ -30,10 +30,6 @@ set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 """ end stolen section
 
-""map leader to ' since i dont use it either
-""has to be mapped before vundle load crap
-let mapleader = "'"
-
 ""load up the vundles
 source ~/.vundlerc
 
@@ -61,6 +57,9 @@ let g:ctrlp_custom_ignore = {
 \ }
 
 """my glorious mappings for extra laziness
+"make reloading my config super easy, super dangerous
+map <leader>r :source ~/.vimrc
+
 "make commands easier to input
 map ; :
 "rebind ex mode to replay q macro
@@ -68,3 +67,7 @@ map Q @q
 
 "reaching for esc is hard
 imap kj <Esc>
+
+""map ' to \ since i dont use it either
+""i like having two keys bound to the same thing
+map ' \
