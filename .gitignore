@@ -1,3 +1,4 @@
 vim/*
 !vim/snippets
 !vim/swap
+vim/swap/*
