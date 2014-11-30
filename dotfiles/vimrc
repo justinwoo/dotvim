@@ -62,7 +62,7 @@ let g:ctrlp_custom_ignore = {
 
 """my glorious mappings for extra laziness
 "make reloading my config super easy, super dangerous
-map <leader>r :source ~/.vimrc
+map <leader>r :source ~/.vimrc<cr>
 
 "make commands easier to input
 map ; :
@@ -72,6 +72,40 @@ map Q @q
 "reaching for esc is hard
 imap kj <Esc>
 
-""map ' to \ since i dont use it either
-""i like having two keys bound to the same thing
+"map ' to \ since i dont use it either
+"i like having two keys bound to the same thing
 map ' \
+
+"closing easier
+map <leader>q :q<cr>
+
+"make opening splits easy
+map <leader>v :vsplit<cr><C-W><C-W>
+map <leader>s :split<cr><C-W><C-W>
+
+"indentation
+if has("gui_macvim") && has("gui_running")
+  vmap <D-]> >gv
+  vmap <D-[> <gv
+
+  nmap <D-]> >>
+  nmap <D-[> <<
+
+  omap <D-]> >>
+  omap <D-[> <<
+
+  imap <D-]> <Esc>>>i
+  imap <D-[> <Esc><<i
+else
+  vmap <A-]> >gv
+  vmap <A-[> <gv
+
+  nmap <A-]> >>
+  nmap <A-[> <<
+
+  omap <A-]> >>
+  omap <A-[> <<
+
+  imap <A-]> <Esc>>>i
+  imap <A-[> <Esc><<i
+endif
