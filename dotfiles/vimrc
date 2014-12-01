@@ -31,7 +31,7 @@ set smartcase   " ... unless they contain at least one capital letter
 """ end stolen section
 
 ""load up the vundles
-source ~/.vundlerc
+source ~/.vundlerc.vim
 
 ""always show me the freaking status bar
 set laststatus=2
@@ -52,7 +52,7 @@ set clipboard=unnamed
 ""font is set in airline configs instead. see vundlerc
 
 ""muh colors
-colors molokai
+colors ir_black
 
 ""ignore crap with ctrlP to make it usable
 let g:ctrlp_custom_ignore = {
@@ -66,11 +66,12 @@ map <leader>r :source ~/.vimrc<cr>
 
 "make commands easier to input
 map ; :
-"rebind ex mode to replay q macro
-map Q @q
 
 "reaching for esc is hard
 imap kj <Esc>
+
+"rebind ex mode to replay q macro
+map Q @q
 
 "map ' to \ since i dont use it either
 "i like having two keys bound to the same thing

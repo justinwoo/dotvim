@@ -8,9 +8,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 ""my glorious plugins be declared here
-source ~/.vundlerc.langs
-source ~/.vundlerc.colors
-source ~/.vundlerc.utils
+source ~/.vundlerc.langs.vim
+source ~/.vundlerc.colors.vim
+source ~/.vundlerc.utils.vim
 
 ""end of plugin declarations, time to wrap it up
 call vundle#end()            " required
