@@ -2,7 +2,6 @@
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -31,3 +30,10 @@ map <leader>t :TagbarToggle<cr>
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 set guifont=Meslo\ LG\ S\ for\ Powerline:h16
+
+Plugin 'scrooloose/syntastic'
+let g:syntastic_auto_loc_list=1
+let g:syntastic_disabled_filetypes=['html']
+let g:syntastic_enable_signs=1
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
