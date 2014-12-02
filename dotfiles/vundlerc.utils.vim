@@ -11,6 +11,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'sjl/gundo.vim'
 Plugin 'vim-scripts/emoji_complete'
+Plugin 'mileszs/ack.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 if has("gui_macvim") && has("gui_running")
