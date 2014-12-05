@@ -9,7 +9,6 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-scripts/ZoomWin'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'sjl/gundo.vim'
 Plugin 'vim-scripts/emoji_complete'
 Plugin 'mileszs/ack.vim'
 
@@ -38,3 +37,6 @@ let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
+
+Plugin 'sjl/gundo.vim'
+map <leader>u :GundoToggle<cr>
