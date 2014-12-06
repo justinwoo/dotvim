@@ -11,6 +11,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/emoji_complete'
 Plugin 'mileszs/ack.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 Plugin 'scrooloose/nerdcommenter'
 if has("gui_macvim") && has("gui_running")
@@ -37,6 +38,9 @@ let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
+let g:syntastic_mode_map = { 'mode': 'active',
+      \ 'passive_filetypes': ['handlebars'] }
+map <leader>S :SyntasticToggleMode<cr>
 
 Plugin 'sjl/gundo.vim'
 map <leader>u :GundoToggle<cr>

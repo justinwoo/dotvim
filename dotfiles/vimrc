@@ -77,6 +77,10 @@ map Q @q
 "i like having two keys bound to the same thing
 map ' \
 
+"make changing panes easier
+map <leader>o <C-W><C-W>
+map `o <C-W><C-W>
+
 "closing easier
 map <leader>q :q<cr>
 
