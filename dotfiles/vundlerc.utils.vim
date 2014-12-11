@@ -23,7 +23,6 @@ endif
 
 Plugin 'scrooloose/nerdtree'
 map <leader>n :NERDTreeToggle<cr>
-let NERDTreeQuitOnOpen=1
 
 Plugin 'majutsushi/tagbar'
 map <leader>t :TagbarToggle<cr>
@@ -44,3 +43,6 @@ map <leader>S :SyntasticToggleMode<cr>
 
 Plugin 'sjl/gundo.vim'
 map <leader>u :GundoToggle<cr>
+
+Plugin 'vim-scripts/YankRing.vim'
+map <leader>y :YRShow<cr>
