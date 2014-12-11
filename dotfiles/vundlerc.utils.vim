@@ -43,6 +43,3 @@ map <leader>S :SyntasticToggleMode<cr>
 
 Plugin 'sjl/gundo.vim'
 map <leader>u :GundoToggle<cr>
-
-Plugin 'vim-scripts/YankRing.vim'
-map <leader>y :YRShow<cr>
