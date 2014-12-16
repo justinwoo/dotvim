@@ -1,5 +1,4 @@
 ""my colors plugins
-Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -12,6 +11,9 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/emoji_complete'
 Plugin 'mileszs/ack.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+
+Plugin 'tpope/vim-fugitive'
+map <leader>b :Gblame<CR>
 
 Plugin 'scrooloose/nerdcommenter'
 if has("gui_macvim") && has("gui_running")
