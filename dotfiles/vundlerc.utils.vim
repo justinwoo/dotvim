@@ -24,6 +24,7 @@ else
 endif
 
 Plugin 'scrooloose/nerdtree'
+let NERDTreeHijackNetrw = 0
 map <leader>n :NERDTreeToggle<cr>
 
 Plugin 'majutsushi/tagbar'
