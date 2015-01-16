@@ -54,12 +54,6 @@ set clipboard=unnamed
 ""muh colors
 colors ir_black
 
-""ignore crap with ctrlP to make it usable
-let g:ctrlp_custom_ignore = {
-\ 'dir':  '\.git$\|\.yardoc\|node_modules\|public\|bower_components\|dist\|build\|log\|tmp$',
-\ 'file': '\.so$\|\.dat$|\.DS_Store$'
-\ }
-
 """my glorious mappings for extra laziness
 "make reloading my config super easy, super dangerous
 map <leader>r :source ~/.vimrc<cr>

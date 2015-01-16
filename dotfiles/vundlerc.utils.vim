@@ -1,5 +1,4 @@
 ""my colors plugins
-Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -11,6 +10,13 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/emoji_complete'
 Plugin 'mileszs/ack.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+
+Plugin 'kien/ctrlp.vim'
+""ignore crap with ctrlP to make it usable
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\.git$\|\.yardoc\|node_modules\|public\|bower_components\|dist\|build\|log\|tmp\|pages\|data$',
+\ 'file': '\.so$\|\.dat$|\.DS_Store$'
+\ }
 
 Plugin 'tpope/vim-fugitive'
 map <leader>b :Gblame<CR>
